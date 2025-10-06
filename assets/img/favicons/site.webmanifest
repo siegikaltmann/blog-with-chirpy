@@ -1,0 +1,11 @@
+{
+  "name": "Siegfried Kaltmann",
+  "short_name": "SK Blog",
+  "icons": [
+    { "src": "/blog-with-chirpy/assets/img/favicons/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/blog-with-chirpy/assets/img/favicons/favicon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
