@@ -1,3 +1,10 @@
+url: "https://siegikaltmann.github.io"
+baseurl: "/blog-with-chirpy"
+lang: de
+timezone: Europe/Vienna
+
+
+
 # The Site Configuration
 
 # Import the theme
