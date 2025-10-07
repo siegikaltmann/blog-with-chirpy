@@ -59,7 +59,7 @@ Falls du noch **nicht** in `_data/authors.yml` stehst, lege dort folgendes an:
 siegik:
   name: "Siegfried Kaltmann"
   avatar: "/assets/img/avatar.png"
-  url: "https://siegikaltmann.io"
+  url: "https://siegikaltmann.io/blog-with-chirpy"
 
 Nützliche Tipps fürs Weiterarbeiten
 Bei Projekt-Seite weiter mit
