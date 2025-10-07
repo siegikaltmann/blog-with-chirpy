@@ -22,6 +22,8 @@ verantwortlich für
 - Planung und Entwicklung pneutmatischer bzw. elektrischer Bauteile 
 - Komponentenorganisation- Zylinder,Ventile, Bandmaterial, Rollen 
 - Programmfindung zur Visualisierung
+    - Länger Förderband
+
 
 Vorhaben bis Ende Oktober 2025 
 Komponentenrecherche bzw. suche Zukaufteile- Zylinder
@@ -49,3 +51,6 @@ bis Di 16.10.25 Kenntnis über:
 
 Farberkennungssensor (Reichelt)
 - https://www.reichelt.at/at/de/shop/produkt/arduino_-_farbsensor_tcs3200-192148
+
+Kleinteile
+- www.maedler.de
