@@ -46,3 +46,25 @@ F_G = mu_G * F_N
 print(f"Normalkraft: {F_N:.1f} N")
 print(f"Haftreibung: {F_H:.1f} N")
 print(f"Gleitreibung: {F_G:.1f} N")
+```
+
+Ergebnis:
+Normalkraft: 94.8 N
+Haftreibung: 37.9 N
+Gleitreibung: 28.4 N
+
+🧠 Aufgabe
+Ein 5 kg schwerer Block liegt auf horizontaler Fläche ($\mu_H = 0.5$, $\mu_G = 0.4$).
+Welche Kraft ist nötig, um ihn gerade in Bewegung zu setzen?
+✏️ Lösung:
+$F_N = m \cdot g = 49.05,\mathrm{N}$
+$F_R = \mu_H \cdot F_N = 24.5,\mathrm{N}$
+
+🔍 Visualisierung (Mermaid)
+graph TD
+A[Körper] -->|F_G| B[Untergrund]
+B -->|F_H| A
+
+📘 Mermaid-Diagramme kannst du überall nutzen – Chirpy rendert sie automatisch.
+
+
