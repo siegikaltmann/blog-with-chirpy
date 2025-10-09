@@ -5,7 +5,7 @@ categories: [Blog, Vorlage]
 tags: [template, chirpy, markdown]
 description: Eine Vorlage für zukünftige Blogbeiträge im Chirpy-Theme.
 image:
-  path: /assets/img/sample-cover.jpg
+  path: /assets/img/winter_wonder_land_bw.heic
   alt: Beispiel-Coverbild
 ---
 
