@@ -7,6 +7,7 @@ author: siegik
 ---
 
 Willkommen zu meinem ersten Beitrag auf meiner neuen **Chirpy-Website** 🎉  
+{: .prompt-info }
 
 Ich teste hier, wie **Markdown**, **Code**, **Bilder** und **Formeln** aussehen.
 
