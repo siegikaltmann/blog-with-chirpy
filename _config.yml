@@ -1,7 +1,7 @@
 # --- Site basics -------------------------------------------------------------
 title: "Siegfried Kaltmann"
 tagline: "Notizen, Code & Projekte"
-description: "HTL-Ingenieur, Lehrer und Entwickler – Technik, Programmierung und Wissenschaft."
+description: "HTL - Maschinenbau, Programmierung und Hobbies."
 lang: de
 timezone: Europe/Vienna
 
@@ -18,7 +18,7 @@ github:
   username: siegikaltmann
 social:
   name: Siegfried Kaltmann
-  email: siegikaltmann@gmail.com
+  email: siegfriedkaltmann@gmail.com
   links:
     - https://github.com/siegikaltmann
 
