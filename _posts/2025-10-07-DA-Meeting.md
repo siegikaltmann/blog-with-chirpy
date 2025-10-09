@@ -1,5 +1,5 @@
 ---
-title: TITLE
+title: Team-Meeting DA "Förderband"
 date: 2025-10-07
 categories: [TOP_CATEGORY, SUB_CATEGORY]
 tags: [meeting]     # TAG names should always be lowercase
