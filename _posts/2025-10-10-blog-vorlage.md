@@ -29,12 +29,13 @@ def hallo():
 
 ## Abschnitt 2 – Formeln
 Du kannst auch mathematische Ausdrücke einfügen:
-$ ∑F=0, ∑M=0 $
+$ \sum{}F=0, ∑M=0 $
 
 
 ## Abschnitt 3 – Bilder
 Ein Bild aus deinem Ordner /assets/img/ einfügen:
-{: width="400" .shadow }
+
+![Vorarlberger Alpen](/assets/img/winter_wonder_land_bw.heic){: width="300" .shadow .rounded}
 
 
 ## Abschnitt 4 – Fazit
