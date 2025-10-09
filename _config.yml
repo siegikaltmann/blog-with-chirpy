@@ -7,7 +7,7 @@ timezone: Europe/Vienna
 
 # --- URLs (Projekt-Seite) ----------------------------------------------------
 url: "https://siegikaltmann.github.io"
-baseurl: "/blog-with-chirpy"
+baseurl: "/blog-with-chirpy"   # -> https://siegikaltmann.github.io/blog-with-chirpy/...
 
 # --- Theme -------------------------------------------------------------------
 theme: jekyll-theme-chirpy
@@ -21,11 +21,8 @@ social:
   email: siegfriedkaltmann@gmail.com
   links:
     - https://github.com/siegikaltmann
-    
-# --- Markdown ----------------------------------------------------------------
-markdown: kramdown
 
-# --- Analytics & Pageviews (leer lassen) -------------------------------------
+# --- Analytics & Pageviews ---------------------------------------------------
 analytics: {}
 pageviews:
   provider:
@@ -34,7 +31,7 @@ pageviews:
 avatar: /assets/img/avatar.png
 social_preview_image:
 
-# --- PWA (erstmal aus, damit Favicons kein Build brechen) --------------------
+# --- PWA ---------------------------------------------------------------------
 pwa:
   enabled: false
   cache:
@@ -42,8 +39,10 @@ pwa:
 
 # --- Pagination ---------------------------------------------------------------
 paginate: 10
+paginate_path: "/page:num"   # /page2, /page3, ...
 
 # --- Markdown / Rouge --------------------------------------------------------
+markdown: kramdown
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
@@ -81,7 +80,7 @@ defaults:
       layout: page
       permalink: /:title/
 
-# --- HTML compress (Standard) ------------------------------------------------
+# --- HTML compress ------------------------------------------------------------
 compress_html:
   clippings: all
   comments: all
@@ -91,7 +90,7 @@ compress_html:
   ignore:
     envs: [development]
 
-# --- Archives (Chirpy) -------------------------------------------------------
+# --- Archives (aktiv, da Plugin genutzt) -------------------------------------
 jekyll-archives:
   enabled: [categories, tags]
   layouts:
@@ -100,6 +99,14 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# --- Plugins (für Actions-Build) ---------------------------------------------
+plugins:
+  - jekyll-paginate
+  - jekyll-archives
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
 
 # --- Excludes ----------------------------------------------------------------
 exclude:
