@@ -21,6 +21,9 @@ social:
   email: siegfriedkaltmann@gmail.com
   links:
     - https://github.com/siegikaltmann
+    
+# --- Markdown ----------------------------------------------------------------
+markdown: kramdown
 
 # --- Analytics & Pageviews (leer lassen) -------------------------------------
 analytics: {}
