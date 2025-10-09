@@ -4,6 +4,7 @@ tagline: "Notizen, Code & Projekte"
 description: "HTL - Maschinenbau, Programmierung und Hobbies."
 lang: de
 timezone: Europe/Vienna
+future: true
 
 # --- URLs (Projekt-Seite) ----------------------------------------------------
 url: "https://siegikaltmann.github.io"
