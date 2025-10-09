@@ -6,7 +6,7 @@ lang: de
 timezone: Europe/Vienna
 
 # --- URLs (Projekt-Seite) ----------------------------------------------------
-url: "https://siegikaltmann.github.io
+url: "https://siegikaltmann.github.io"
 baseurl: "/blog-with-chirpy"
 
 # --- Theme -------------------------------------------------------------------
