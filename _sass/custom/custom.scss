@@ -13,3 +13,12 @@
 .note-success, .admonition.success{ background:#dcfce7; border-color:#16a34a; color:#14532d; }
 .note-warning, .admonition.warning{ background:#fef9c3; border-color:#eab308; color:#713f12; }
 .note-danger,  .admonition.danger { background:#fee2e2; border-color:#dc2626; color:#7f1d1d; }
+
+/* ------------- Dark Mode Farben -----------------*/
+@media (prefers-color-scheme: dark) {
+  .note-info    { background:#082f49; color:#e0f2fe; border-color:#38bdf8; }
+  .note-success { background:#052e16; color:#dcfce7; border-color:#22c55e; }
+  .note-warning { background:#422006; color:#fef9c3; border-color:#fbbf24; }
+  .note-danger  { background:#450a0a; color:#fee2e2; border-color:#ef4444; }
+}
+
