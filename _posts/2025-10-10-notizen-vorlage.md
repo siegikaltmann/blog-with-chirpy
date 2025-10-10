@@ -34,10 +34,10 @@ Das passiert über die CSS-Regel
 Aber: du kannst das Verhalten ganz leicht überschreiben oder gezielt steuern.
 Hier sind alle gängigen Varianten 👇
 🖼️ 1. Standard (zentriert)
-![Beispiel](/assets/img/test.png)
+![Beispiel](/assets/img/winter_wonder_land_bw.heic){: .rounded. .shadow width="300"}
 → Bild wird zentriert dargestellt.
 🔹 2. Linksbündig
-![Beispiel links](/assets/img/test.png){: .normal .float-left }
+![Beispiel links](/assets/img/test.png){: .normal .float-left width="300"}
 oder (wenn .float-left nicht greift):
 ![Beispiel links](/assets/img/test.png){: style="float: left; margin: 0 1rem 1rem 0;" }
 Damit bleibt Text rechts daneben fließend.
