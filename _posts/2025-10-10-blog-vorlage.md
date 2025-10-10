@@ -143,4 +143,13 @@ Textinhalte darunter
 🚨 <strong>Fehler:</strong> Die Datei wurde nicht gefunden.
 </div>
 
+---
+
+<div class="note note-danger">
+🚨 <strong>Danger:</strong> Vorsicht mit diesem Befehl!
+</div>
+
+<div class="admonition info">
+💡 <strong>Info:</strong> So klappt’s zuverlässiger.
+</div>
 
