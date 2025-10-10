@@ -57,3 +57,14 @@ image.alt	Alternativtext für das Bild
 Wenn du einen neuen Beitrag erstellen willst, kopiere einfach diese Datei und ändere:
 title, date, categories, tags, description
 Textinhalte darunter
+
+## Callouts
+
+<div style="background:#e6ffed; border-left:6px solid #22c55e; padding:1em; border-radius:0.5em;">
+  ✅ <strong>Success:</strong> Alles hat funktioniert!
+</div>
+
+<div style="background:#fff2f2; border-left:6px solid #ef4444; padding:1em; border-radius:0.5em;">
+  ⚠️ <strong>Danger:</strong> Etwas ist schiefgelaufen.
+</div>
+
