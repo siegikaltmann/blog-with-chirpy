@@ -144,6 +144,7 @@ Textinhalte darunter
 </div>
 
 ---
+### Einbinden in _sass/custom/styles.scss
 
 <div class="note note-danger">
 🚨 <strong>Danger:</strong> Vorsicht mit diesem Befehl!
