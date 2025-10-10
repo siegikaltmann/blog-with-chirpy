@@ -127,3 +127,20 @@ Textinhalte darunter
 </div>
 
 
+<div class="note note-info">
+💡 <strong>Info:</strong> Du kannst Markdown innerhalb dieser Box nutzen.
+</div>
+
+<div class="note note-success">
+✅ <strong>Success:</strong> Alles hat funktioniert wie geplant.
+</div>
+
+<div class="note note-warning">
+⚠️ <strong>Warnung:</strong> Überprüfe die Eingabedaten sorgfältig.
+</div>
+
+<div class="note note-danger">
+🚨 <strong>Fehler:</strong> Die Datei wurde nicht gefunden.
+</div>
+
+
