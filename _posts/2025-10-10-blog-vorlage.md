@@ -58,7 +58,7 @@ Wenn du einen neuen Beitrag erstellen willst, kopiere einfach diese Datei und ä
 title, date, categories, tags, description
 Textinhalte darunter
 
-## Callouts
+## Callouts mittels html
 
 <div style="background:#e6ffed; border-left:6px solid #22c55e; padding:1em; border-radius:0.5em;">
   ✅ <strong>Success:</strong> Alles hat funktioniert!
@@ -67,4 +67,63 @@ Textinhalte darunter
 <div style="background:#fff2f2; border-left:6px solid #ef4444; padding:1em; border-radius:0.5em;">
   ⚠️ <strong>Danger:</strong> Etwas ist schiefgelaufen.
 </div>
+
+## Callouts mittels selbstdefinierten Boxen in assets/css/custom.scss
+/* Allgemeiner Stil */
+.alert {
+  padding: 1em 1.2em;
+  border-radius: 0.5em;
+  margin: 1em 0;
+  color: #0b1020;
+  font-weight: 500;
+}
+
+/* Varianten */
+.alert-info {
+  background: #e0f2fe;
+  border-left: 6px solid #0ea5e9;
+}
+.alert-success {
+  background: #dcfce7;
+  border-left: 6px solid #22c55e;
+}
+.alert-warning {
+  background: #fef9c3;
+  border-left: 6px solid #eab308;
+}
+.alert-danger {
+  background: #fee2e2;
+  border-left: 6px solid #ef4444;
+}
+
+<div class="alert alert-info">
+💡 **Info:** Du kannst Markdown *innerhalb* der Box verwenden!
+</div>
+
+<div class="alert alert-danger">
+⚠️ **Fehler:** Überprüfe deine Frontmatter-Daten.
+</div>
+
+## Callout mit Admonition im custom.scss
+
+.admonition {
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 0.5em;
+  border-left: 5px solid;
+}
+
+.admonition.info    { background: #e0f2fe; border-color: #0ea5e9; }
+.admonition.warning { background: #fef9c3; border-color: #eab308; }
+.admonition.danger  { background: #fee2e2; border-color: #ef4444; }
+.admonition.success { background: #dcfce7; border-color: #22c55e; }
+
+<div class="admonition info">
+💡 <strong>Info:</strong> Das ist eine Info-Box im Dokumentationsstil.
+</div>
+
+<div class="admonition danger">
+🚨 <strong>Danger:</strong> Diesen Befehl nur mit Vorsicht ausführen!
+</div>
+
 
