@@ -101,4 +101,11 @@
   text-decoration-color: rgba(0, 0, 0, 0.4);
 }
 
+body::before {
+  content: "CSS reloaded ✅";
+  position: fixed; top: 0; left: 0;
+  background: #222; color: #fff;
+  padding: 4px 8px; z-index: 9999; font-size: .8rem;
+}
+
 
