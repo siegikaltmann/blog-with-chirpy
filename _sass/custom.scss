@@ -1,23 +1,124 @@
-/* --- custom styles --- */
+/* --- Admonitions im RealPython-Stil --- */
 
-.note, .admonition {
+/* Basis */
+.admonition, .note {
+  position: relative;
   padding: 1rem 1.25rem;
-  margin: 1.2rem 0;
+  margin: 1.25rem 0;
   border-left: 6px solid transparent;
   border-radius: 0.75rem;
+  background: #f8fafc; /* sehr hell */
   box-shadow: 0 4px 12px rgba(0,0,0,.05);
   font-size: .95rem;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
-.note-info,    .admonition.info    { background:#e0f2fe; border-color:#0284c7; color:#0c4a6e; }
-.note-success, .admonition.success { background:#dcfce7; border-color:#16a34a; color:#14532d; }
-.note-warning, .admonition.warning { background:#fef9c3; border-color:#eab308; color:#713f12; }
-.note-danger,  .admonition.danger  { background:#fee2e2; border-color:#dc2626; color:#7f1d1d; }
+.admonition-title {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin: 0 0 .5rem 0;
+  font-weight: 700;
+  letter-spacing: .2px;
+}
 
+/* kleines Icon links vor dem Titel */
+.admonition-title::before {
+  content: "ℹ️";
+  display: inline-block;
+  line-height: 1;
+  transform: translateY(1px);
+  opacity: .9;
+  font-size: 1rem;
+}
+
+/* Links im Kasten */
+.admonition a { text-decoration-thickness:.08em; text-underline-offset:.15em; }
+
+/* Typen — Farben angelehnt an RealPython */
+.admonition.note,
+.note-neutral {
+  border-left-color: $rp-gray;
+  background: color-mix(in oklab, $rp-gray 6%, white 94%);
+}
+.admonition.note .admonition-title,
+.note-neutral .admonition-title { color: $rp-gray; }
+.admonition.note a,
+.note-neutral a { color: $rp-gray; }
+
+.admonition.info, .note-info {
+  border-left-color: $rp-blue;
+  background: color-mix(in oklab, $rp-blue 6%, white 94%);
+}
+.admonition.info .admonition-title,
+.note-info .admonition-title { color: $rp-blue; }
+.admonition.info a,
+.note-info a { color: $rp-blue; }
+.admonition.info .admonition-title::before,
+.note-info .admonition-title::before { content: "💡"; }
+
+.admonition.success, .note-success {
+  border-left-color: $rp-green;
+  background: color-mix(in oklab, $rp-green 6%, white 94%);
+}
+.admonition.success .admonition-title,
+.note-success .admonition-title { color: $rp-green; }
+.admonition.success a,
+.note-success a { color: $rp-green; }
+.admonition.success .admonition-title::before,
+.note-success .admonition-title::before { content: "✅"; }
+
+.admonition.warning, .note-warning {
+  border-left-color: $rp-yellow;
+  background: color-mix(in oklab, $rp-yellow 10%, white 90%);
+}
+.admonition.warning .admonition-title,
+.note-warning .admonition-title { color: $rp-yellow; }
+.admonition.warning a,
+.note-warning a { color: $rp-yellow; }
+.admonition.warning .admonition-title::before,
+.note-warning .admonition-title::before { content: "⚠️"; }
+
+.admonition.danger, .note-danger {
+  border-left-color: $rp-red;
+  background: color-mix(in oklab, $rp-red 8%, white 92%);
+}
+.admonition.danger .admonition-title,
+.note-danger .admonition-title { color: $rp-red; }
+.admonition.danger a,
+.note-danger a { color: $rp-red; }
+.admonition.danger .admonition-title::before,
+.note-danger .admonition-title::before { content: "⛔"; }
+
+/* Dark Mode – satter, aber nicht knallig */
 @media (prefers-color-scheme: dark) {
-  .note-info    { background:#082f49; color:#e0f2fe; border-color:#38bdf8; }
-  .note-success { background:#052e16; color:#dcfce7; border-color:#22c55e; }
-  .note-warning { background:#422006; color:#fef9c3; border-color:#fbbf24; }
-  .note-danger  { background:#450a0a; color:#fee2e2; border-color:#ef4444; }
+  .admonition, .note {
+    background: #0f172a; /* sehr dunkles Blau-Grau */
+    box-shadow: none;
+    color: #e5e7eb;
+  }
+  .admonition.note, .note-neutral {
+    border-left-color: color-mix(in oklab, $rp-gray 65%, black 35%);
+    background: color-mix(in oklab, $rp-gray 20%, #0f172a 80%);
+  }
+  .admonition.info, .note-info {
+    border-left-color: color-mix(in oklab, $rp-blue 75%, black 25%);
+    background: color-mix(in oklab, $rp-blue 20%, #0f172a 80%);
+  }
+  .admonition.success, .note-success {
+    border-left-color: color-mix(in oklab, $rp-green 75%, black 25%);
+    background: color-mix(in oklab, $rp-green 18%, #0f172a 82%);
+  }
+  .admonition.warning, .note-warning {
+    border-left-color: color-mix(in oklab, $rp-yellow 80%, black 20%);
+    background: color-mix(in oklab, $rp-yellow 15%, #0f172a 85%);
+  }
+  .admonition.danger, .note-danger {
+    border-left-color: color-mix(in oklab, $rp-red 80%, black 20%);
+    background: color-mix(in oklab, $rp-red 16%, #0f172a 84%);
+  }
+  .admonition a { color: inherit; }
 }
+
+/* Abstände innen etwas luftiger bei längeren Blöcken */
+.admonition > :last-child { margin-bottom: 0; }
