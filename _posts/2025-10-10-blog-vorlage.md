@@ -15,7 +15,7 @@ image:
 .note{padding:1rem 1.25rem;margin:1.2rem 0;border-left:6px solid transparent;border-radius:.75rem;box-shadow:0 4px 12px rgba(0,0,0,.05)}
 .note-danger{background:#fee2e2;border-color:#dc2626;color:#7f1d1d}
 </style>
-<div class="note note-info">Test-Box</div>
+<div class="note note-alert">Test-Box</div>
 
 
 Hier beginnt dein Text. Beschreibe kurz, worum es in diesem Beitrag geht.  
