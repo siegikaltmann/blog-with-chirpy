@@ -1,6 +1,4 @@
-/* =============================
-   Eigene Styles für Chirpy
-   ============================= */
+/* --- custom styles --- */
 
 .note, .admonition {
   padding: 1rem 1.25rem;
@@ -12,10 +10,10 @@
   line-height: 1.5;
 }
 
-.note-info, .admonition.info     { background:#e0f2fe; border-color:#0284c7; color:#0c4a6e; }
-.note-success, .admonition.success{ background:#dcfce7; border-color:#16a34a; color:#14532d; }
-.note-warning, .admonition.warning{ background:#fef9c3; border-color:#eab308; color:#713f12; }
-.note-danger,  .admonition.danger { background:#fee2e2; border-color:#dc2626; color:#7f1d1d; }
+.note-info,    .admonition.info    { background:#e0f2fe; border-color:#0284c7; color:#0c4a6e; }
+.note-success, .admonition.success { background:#dcfce7; border-color:#16a34a; color:#14532d; }
+.note-warning, .admonition.warning { background:#fef9c3; border-color:#eab308; color:#713f12; }
+.note-danger,  .admonition.danger  { background:#fee2e2; border-color:#dc2626; color:#7f1d1d; }
 
 @media (prefers-color-scheme: dark) {
   .note-info    { background:#082f49; color:#e0f2fe; border-color:#38bdf8; }
