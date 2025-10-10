@@ -39,6 +39,14 @@ Markdown unterstützt *kursiv*, **fett** und `Code`.
 def hallo():
     print("Hallo, Welt!")
 ```
+<div class="note note-danger">
+🚨 <strong>Danger:</strong> Box sollte jetzt gestylt sein.
+</div>
+
+<div class="note-test">
+🧪 Testbox: Gelb mit schwarzem Streifen.
+</div>
+
 
 ## Abschnitt 2 – Formeln
 Du kannst auch mathematische Ausdrücke einfügen:
