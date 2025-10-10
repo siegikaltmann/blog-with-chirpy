@@ -25,7 +25,20 @@
   border-left: 6px solid #ef4444;
 }
 
-/* ----- Klasse note -------
+/* ----- Adminotion -------------
+
+.admonition {
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 0.5em;
+  border-left: 5px solid;
+}
+
+.admonition.info    { background: #e0f2fe; border-color: #0ea5e9; }
+.admonition.warning { background: #fef9c3; border-color: #eab308; }
+.admonition.danger  { background: #fee2e2; border-color: #ef4444; }
+.admonition.success { background: #dcfce7; border-color: #22c55e; }
+
 
 /* =========================================
    Farbige Hinweisboxen für Chirpy
