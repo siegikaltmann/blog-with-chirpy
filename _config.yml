@@ -12,9 +12,9 @@ baseurl: "/blog-with-chirpy"   # -> https://siegikaltmann.github.io/blog-with-ch
 
 # --- Theme -------------------------------------------------------------------
 theme: jekyll-theme-chirpy
-theme_mode: dark        # immer dunkel
+# theme_mode: dark        # immer dunkel
 # theme_mode: light      # immer hell
-# theme_mode: auto       # (Standard) Systemabhängig
+theme_mode: auto       # (Standard) Systemabhängig
 
 
 # --- Social ------------------------------------------------------------------
