@@ -1,0 +1,26 @@
+/* Allgemeiner Stil */
+.alert {
+  padding: 1em 1.2em;
+  border-radius: 0.5em;
+  margin: 1em 0;
+  color: #0b1020;
+  font-weight: 500;
+}
+
+/* Varianten */
+.alert-info {
+  background: #e0f2fe;
+  border-left: 6px solid #0ea5e9;
+}
+.alert-success {
+  background: #dcfce7;
+  border-left: 6px solid #22c55e;
+}
+.alert-warning {
+  background: #fef9c3;
+  border-left: 6px solid #eab308;
+}
+.alert-danger {
+  background: #fee2e2;
+  border-left: 6px solid #ef4444;
+}
