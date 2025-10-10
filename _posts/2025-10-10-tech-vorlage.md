@@ -15,6 +15,10 @@ mermaid: true
 Kurzer Überblick in 2–3 Sätzen: Was lernen Leser:innen? Welche Voraussetzungen?
 
 ---
+<div class="note note-success">
+✅ <strong>Erfolg!</strong> Deine Custom-Styles werden geladen.
+</div>
+---
 
 ## Voraussetzungen
 - Grundkenntnisse in …
