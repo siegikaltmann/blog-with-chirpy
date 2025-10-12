@@ -213,3 +213,7 @@ pre, code {
 
 /* Letztes Element im Kasten ohne extra Abstand */
 .admonition > :last-child { margin-bottom: 0; }
+
+/* DEBUG — nach dem Test wieder löschen */
+.admonition { outline: 3px dashed magenta !important; }
+
