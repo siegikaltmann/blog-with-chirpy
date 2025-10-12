@@ -10,32 +10,24 @@
 
 /* append your custom style below */
 
-
 /* === Admonitions (RealPython-Stil) – dein Zusatz === */
 
-/* Grundstruktur */
 .admonition,.note{
   position:relative; padding:1rem 1.25rem; margin:1.25rem 0;
   border-left:6px solid transparent; border-radius:.75rem;
   background:#f8fafc; box-shadow:0 4px 12px rgba(0,0,0,.05);
   font-size:.95rem; line-height:1.55;
 }
-
-/* Titel + Icon */
 .admonition-title{
   display:flex; align-items:center; gap:.55rem;
   margin:0 0 .5rem 0; font-weight:700; letter-spacing:.2px;
 }
-
-/* Icon-Größe */
 .admonition-title .admonition-icon{
-  width:1rem; height:1rem; flex:0 0 1rem; display:inline-block; vertical-align:text-bottom;
+  width:1rem; height:1rem; flex:0 0 1rem;
+  display:inline-block; vertical-align:text-bottom;
 }
-
-/* Links */
 .admonition a{ text-decoration-thickness:.08em; text-underline-offset:.15em; }
 
-/* Farben */
 .admonition.note,.note-neutral{ border-left-color:#4a5568; background:#f1f5f9; color:#0f172a; }
 .admonition.note .admonition-title,.note-neutral .admonition-title{ color:#4a5568; }
 
@@ -51,7 +43,6 @@
 .admonition.danger,.note-danger{ border-left-color:#c53030; background:#ffe9e9; color:#4a0f0f; }
 .admonition.danger .admonition-title,.note-danger .admonition-title{ color:#c53030; }
 
-/* Dark Mode */
 @media (prefers-color-scheme: dark){
   .admonition,.note{ background:#0f172a; box-shadow:none; color:#e5e7eb; }
   .admonition.note,.note-neutral{ border-left-color:#64748b; background:#0f1b2b; }
@@ -61,6 +52,7 @@
   .admonition.danger,.note-danger{ border-left-color:#c53030; background:#2b1212; }
   .admonition a{ color:inherit; }
 }
-
-/* Letztes Element kompakt */
 .admonition>:last-child{ margin-bottom:0; }
+
+
+
