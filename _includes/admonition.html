@@ -1,0 +1,22 @@
+{% comment %}
+--------------------------------------------------------------------
+_admonition.html
+Erzeugt RealPython-ähnliche Hinweis-Boxen mit SVG-Icons.
+Aufruf:
+  {% include admonition.html type="info" title="Hinweis" %}
+  Dein Text …
+  {% endinclude %}
+Typen: info | success | warning | danger | note
+--------------------------------------------------------------------
+{% endcomment %}
+
+{% assign box_type  = include.type  | default: "note" %}
+{% assign box_title = include.title | default: "Hinweis" %}
+
+<div class="admonition {{ box_type }}">
+  <p class="admonition-title">
+    {% include icons/{{ box_type }}.svg %}
+    {{ box_title }}
+  </p>
+  {{ include.content | markdownify }}
+</div>
