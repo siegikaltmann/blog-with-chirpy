@@ -119,5 +119,51 @@
 }
 
 
+/* Sidebar - Balken dunkler */
+/* ── Aktiver Sidebar-Eintrag: Balken dunkler & besser sichtbar ─────────── */
+
+:root{
+  /* Farben zentral einstellbar */
+  --sb-active-bar: #0f172a;            /* sehr dunkles Blau/Anthrazit (Light) */
+  --sb-active-bg:  rgba(0,0,0,.06);    /* zarte Fläche (Light) */
+  --sb-active-text:#111827;            /* etwas kräftigerer Text (Light) */
+}
+
+:root[data-theme="dark"]{
+  --sb-active-bar: #93c5fd;            /* helles Blau für Dark Mode */
+  --sb-active-bg:  rgba(255,255,255,.06);
+  --sb-active-text:#f9fafb;
+}
+
+.sidebar nav ul li > a{
+  position: relative; 
+  transition: background .15s ease, color .15s ease;
+}
+
+/* Linker Balken */
+.sidebar nav ul li.active > a::before,
+.sidebar nav ul li > a[aria-current="page"]::before{
+  content:"";
+  position:absolute; left:0; top:0; bottom:0;
+  width: 4px;                           /* etwas breiter als Standard */
+  background: var(--sb-active-bar);
+  border-radius: 0 2px 2px 0;
+}
+
+/* Aktiver Eintrag zusätzlich hervorheben */
+.sidebar nav ul li.active > a,
+.sidebar nav ul li > a[aria-current="page"]{
+  background: var(--sb-active-bg);
+  color: var(--sb-active-text);
+  font-weight: 600;
+}
+
+/* Hover bleibt dezent und überschreibt den aktiven Zustand nicht */
+.sidebar nav ul li > a:hover{
+  background: rgba(0,0,0,.04);
+}
+:root[data-theme="dark"] .sidebar nav ul li > a:hover{
+  background: rgba(255,255,255,.06);
+}
 
 
