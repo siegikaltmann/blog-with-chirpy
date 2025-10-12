@@ -1,29 +1,29 @@
 ### Info
 
-{% include admonition.html type="info" title="Hinweis" %}
-So setzt du Info-Kästchen im RealPython-Look.
-{% endinclude %}
+{% capture body %}So setzt du Info-Kästchen im RealPython-Look.{% endcapture %}
+{% include admonition.html type="info" title="Hinweis" content=body %}
+
 
 ### Success
 
-{% include admonition.html type="success" title="Erfolgreich" %}
-Alles hat geklappt!
-{% endinclude %}
+{% capture body %}Alles hat geklappt!{% endcapture %}
+{% include admonition.html type="success" title="Erfolgreich" content=body %}
+
 
 ### Warning
 
-{% include admonition.html type="warning" title="Achtung" %}
-Bitte vorher sichern.
-{% endinclude %}
+{% capture body %}Bitte vorher sichern.{% endcapture %}
+{% include admonition.html type="warning" title="Achtung" content=body %}
+
 
 ### Danger
 
-{% include admonition.html type="danger" title="Fehler" %}
-Etwas ist schiefgelaufen.
-{% endinclude %}
+{% capture body %}Etwas ist schiefgelaufen.{% endcapture %}
+{% include admonition.html type="danger" title="Fehler" content=body %}
+
 
 ### Note (neutral)
 
-{% include admonition.html type="note" title="Notiz" %}
-Kleine Randbemerkung.
-{% endinclude %}
+{% capture body %}Kleine Randbemerkung.{% endcapture %}
+{% include admonition.html type="note" title="Notiz" content=body %}
+
