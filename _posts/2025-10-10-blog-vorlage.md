@@ -34,6 +34,22 @@ Du kannst **Markdown**, $\LaTeX$, Codeblöcke und Bilder verwenden.
 Hier steht ein Absatz mit etwas Fließtext.  
 Markdown unterstützt *kursiv*, **fett** und `Code`.
 
+### Hinweisbox
+1) Empfohlene Vorlage (kopierbar)
+<div class="admonition info" markdown="1">
+**Info** – kurzer Satz oben.
+
+- Stichpunkt 1
+- Stichpunkt 2
+
+```python
+for i in range(5):
+    print("Hi")
+```
+
+</div>  
+Wichtig: - **Leerzeilen** vor/nach dem Code-Fence. - Die ```-Zäune **links bündig** (nicht eingerückt).
+
 ```python
 # Beispiel-Codeblock
 def hallo():
