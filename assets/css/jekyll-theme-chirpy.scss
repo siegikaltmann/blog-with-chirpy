@@ -166,4 +166,20 @@
   background: rgba(255,255,255,.06);
 }
 
+/* Sichtbarer Aktionsbalken unabhängig vom Template-Active-State */
+:root { --sb-active-bar:#0f172a; --sb-active-bg:rgba(0,0,0,.06); --sb-active-text:#111827; }
+:root[data-theme="dark"] { --sb-active-bar:#93c5fd; --sb-active-bg:rgba(255,255,255,.06); --sb-active-text:#f9fafb; }
+
+/* matcht die aktuelle URL, mit und ohne index.html */
+#sidebar a[href="{{ page.url | relative_url }}"],
+#sidebar a[href="{{ page.url | replace:'index.html','' | relative_url }}"] {
+  display:block;
+  box-shadow: inset 6px 0 0 var(--sb-active-bar) !important;
+  background: var(--sb-active-bg) !important;
+  color: var(--sb-active-text) !important;
+  font-weight: 600 !important;
+  padding-left: 1rem;
+}
+
+
 
