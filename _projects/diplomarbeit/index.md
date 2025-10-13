@@ -1,5 +1,5 @@
 ---
-title: Diplomarbeit – Förderband 25/26
+title: Diplomarbeit – Förderband 25-26
 project: diplomarbeit
 summary: Kurzbeschreibung … ksfgjkjgaskgfjasldkjg
 start: 2025-09-01
