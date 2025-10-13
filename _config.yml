@@ -72,6 +72,9 @@ collections:
   docs:
     output: true
     permalink: /:collection/:path/
+  projects:                # <— neu
+    output: true
+    permalink: /projekte/:path/
 
 defaults:
   - scope:
@@ -106,17 +109,16 @@ defaults:
       math: true
       mermaid: true
 
-  # ↓ Zusatz nur für _docs/projekte/*
   - scope:
-      path: "_docs/projekte"
-      type: docs
+      path: ""
+      type: projects
     values:
-      layout: page
-      permalink: /projekte/:path/
+      layout: page         # kein Blog-Header
       toc: true
+      comments: false
       math: true
       mermaid: true
-
+  
 
 # --- HTML compress ------------------------------------------------------------
 compress_html:
