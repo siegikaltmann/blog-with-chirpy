@@ -13,3 +13,18 @@ M_O=\sum_i (\vec r_i \times \vec F_i),\quad
 \abs{x},\ \norm{\vb v},\ \mathbf K^\T.
 \]
 {% endraw %}
+
+
+---
+title: Math-Test
+math: true
+---
+
+Inline: \( \vec{F} = m\,\vec{a} \)
+
+Display:
+\[
+x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}
+\]
+
+
