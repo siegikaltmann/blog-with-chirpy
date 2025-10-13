@@ -33,10 +33,10 @@ analytics: {}
 pageviews: {}
 
 # --- Assets / Avatar / Preview -----------------------------------------------
-# WICHTIG bei Projekt-Pages: Baseurl mitnehmen oder relativ schreiben
-avatar: /blog-with-chirpy/assets/img/avatar.png
-# alternativ: avatar: assets/img/avatar.png
+avatar: /assets/img/avatar.png
+# alternativ: avatar: assets/img/avatar.png   # (relative ist auch ok)
 social_preview_image:
+
 
 # --- PWA ---------------------------------------------------------------------
 pwa:
