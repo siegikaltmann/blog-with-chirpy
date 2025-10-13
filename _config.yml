@@ -82,6 +82,7 @@ defaults:
       comments: true
       toc: true
       permalink: /posts/:title/
+      math: true
   - scope:
       path: _drafts
     values:
