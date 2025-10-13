@@ -8,14 +8,15 @@ future: true
 
 # --- URLs (Projekt-Seite) ----------------------------------------------------
 url: "https://siegikaltmann.github.io"
-baseurl: "/blog-with-chirpy"   # -> https://siegikaltmann.github.io/blog-with-chirpy/...
+baseurl: "/blog-with-chirpy"
 
 # --- Theme -------------------------------------------------------------------
+# Variante A (Build via GitHub Actions/Gemfile):
 theme: jekyll-theme-chirpy
-# theme_mode: dark        # immer dunkel
-# theme_mode: light      # immer hell
-theme_mode: auto       # (Standard) Systemabhängig
+# Variante B (wenn GitHub Pages den Build übernimmt):
+# remote_theme: cotes2020/jekyll-theme-chirpy
 
+theme_mode: auto
 
 # --- Social ------------------------------------------------------------------
 github:
@@ -27,12 +28,14 @@ social:
     - https://github.com/siegikaltmann
 
 # --- Analytics & Pageviews ---------------------------------------------------
+# (beides aus, einfach leer lassen oder entfernen)
 analytics: {}
-pageviews:
-  provider:
+pageviews: {}
 
 # --- Assets / Avatar / Preview -----------------------------------------------
-avatar: /assets/img/avatar.png
+# WICHTIG bei Projekt-Pages: Baseurl mitnehmen oder relativ schreiben
+avatar: /blog-with-chirpy/assets/img/avatar.png
+# alternativ: avatar: assets/img/avatar.png
 social_preview_image:
 
 # --- PWA ---------------------------------------------------------------------
@@ -43,11 +46,14 @@ pwa:
 
 # --- Pagination ---------------------------------------------------------------
 paginate: 10
-paginate_path: "/page:num"   # /page2, /page3, ...
+paginate_path: "/page:num"
 
-# --- Markdown / Rouge --------------------------------------------------------
+# --- Markdown / Kramdown / Rouge ---------------------------------------------
 markdown: kramdown
+highlighter: rouge
 kramdown:
+  input: GFM
+  math_engine: mathjax
   footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
   syntax_highlighter_opts:
@@ -58,12 +64,12 @@ kramdown:
       line_numbers: true
       start_line: 1
 
-# --- Collections / Defaults (Chirpy Standard) --------------------------------
+# --- Collections / Defaults ---------------------------------------------------
 collections:
   tabs:
     output: true
     sort_by: order
-  docs:                # ← NEU
+  docs:
     output: true
     permalink: /:collection/:path/
 
@@ -86,16 +92,15 @@ defaults:
     values:
       layout: page
       permalink: /:title/
-  - scope:            # ← NEU: Standardwerte für _docs
+  - scope:
       path: ""
       type: docs
     values:
-      layout: post     # nutzt das schöne Post-Layout von Chirpy
+      layout: post
       toc: true
       comments: false
       math: true
       mermaid: true
-      # permalink kommt aus der Collection (/docs/:path/)
 
 # --- HTML compress ------------------------------------------------------------
 compress_html:
@@ -107,33 +112,11 @@ compress_html:
   ignore:
     envs: [development]
 
-# --- Archives (aktiv, da Plugin genutzt) -------------------------------------
+# --- Archives -----------------------------------------------------------------
 jekyll-archives:
   enabled: [categories, tags]
-  collections: [posts, docs]   # ← NEU: auch _docs in Archiven berücksichtigen
+  collections: [posts, docs]
   layouts:
     category: category
     tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
-
-# --- Plugins (für Actions-Build) ---------------------------------------------
-plugins:
-  - jekyll-paginate
-  - jekyll-archives
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
-
-# --- Excludes ----------------------------------------------------------------
-exclude:
-  - "*.gem"
-  - "*.gemspec"
-  - docs
-  - tools
-  - README.md
-  - LICENSE
-  - purgecss.js
-  - "*.config.js"
-  - "package*.json"
+  permalin
