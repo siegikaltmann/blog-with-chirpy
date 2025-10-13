@@ -102,6 +102,16 @@ defaults:
       comments: false
       math: true
       mermaid: true
+  - scope:
+    path: "_docs/projekte"
+    type: docs
+  values:
+    layout: page
+    permalink: /projekte/:path/
+    toc: true
+    math: true
+    mermaid: true
+
 
 # --- HTML compress ------------------------------------------------------------
 compress_html:
