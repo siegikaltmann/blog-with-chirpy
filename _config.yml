@@ -83,16 +83,19 @@ defaults:
       toc: true
       permalink: /posts/:title/
       math: true
+
   - scope:
       path: _drafts
     values:
       comments: false
+
   - scope:
       path: ""
       type: tabs
     values:
       layout: page
       permalink: /:title/
+
   - scope:
       path: ""
       type: docs
@@ -102,15 +105,17 @@ defaults:
       comments: false
       math: true
       mermaid: true
+
+  # ↓ Zusatz nur für _docs/projekte/*
   - scope:
-    path: "_docs/projekte"
-    type: docs
-  values:
-    layout: page
-    permalink: /projekte/:path/
-    toc: true
-    math: true
-    mermaid: true
+      path: "_docs/projekte"
+      type: docs
+    values:
+      layout: page
+      permalink: /projekte/:path/
+      toc: true
+      math: true
+      mermaid: true
 
 
 # --- HTML compress ------------------------------------------------------------
