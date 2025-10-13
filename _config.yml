@@ -111,12 +111,18 @@ compress_html:
   blanklines: false
   ignore:
     envs: [development]
-
 # --- Archives -----------------------------------------------------------------
 jekyll-archives:
-  enabled: [categories, tags]
-  collections: [posts, docs]
+  enabled:
+    - categories
+    - tags
+  collections:
+    - posts
+    - docs
   layouts:
     category: category
     tag: tag
-  permalin
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
